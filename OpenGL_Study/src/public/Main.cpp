@@ -1,6 +1,7 @@
 ﻿#include "Main.h"
 
 #include "Geometry/Triangle.h"
+#include "Interpolation/Interpolation.h"
 #include "Transform/Rotate.h"
 #include "Transform/Scale.h"
 #include "Transform/Translate.h"
@@ -87,5 +88,6 @@ int main()
     // return TriangleRendering::TriangleRenderingRun();
     // return TranslateRendering::TranslateRenderingRun();
     // return ScaleRendering::ScaleRenderingRun();
-    return RotateRendering::RotateRenderingRun();
+    // return RotateRendering::RotateRenderingRun();
+    return InterpolationRendering::InterpolationRenderingRun();
 }

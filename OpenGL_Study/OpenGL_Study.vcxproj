@@ -155,6 +155,7 @@
     <None Include="src\Shaders\FragmentShaders\Colors.fs" />
     <None Include="src\Shaders\FragmentShaders\Default.fs" />
     <None Include="src\Shaders\FragmentShaders\FragmentColorShader.fs" />
+    <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
     <None Include="src\Shaders\FragmentShaders\LightCube.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureTest.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureTest2.fs" />
@@ -169,6 +170,7 @@
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
+    <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
     <None Include="src\Shaders\VertexShaders\Translate.vs" />
     <None Include="src\Shaders\VertexShaders\TextureTest.vs" />
@@ -608,6 +610,7 @@
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="src\public\GeometryVertices.h" />
     <ClInclude Include="src\public\Geometry\Triangle.h" />
+    <ClInclude Include="src\public\Interpolation\Interpolation.h" />
     <ClInclude Include="src\public\Main.h" />
     <ClInclude Include="src\public\Transform\Rotate.h" />
     <ClInclude Include="src\public\Transform\Scale.h" />
