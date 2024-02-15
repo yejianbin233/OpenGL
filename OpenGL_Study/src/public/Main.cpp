@@ -1,6 +1,8 @@
 ﻿#include "Main.h"
 
 #include "Geometry/Triangle.h"
+#include "Geometry/Triangle3D.h"
+#include "indice/Indice.h"
 #include "Interpolation/Interpolation.h"
 #include "Transform/Rotate.h"
 #include "Transform/Scale.h"
@@ -85,9 +87,11 @@ int OpenGL_WindowTemplate()
 
 int main()
 {
-    // return TriangleRendering::TriangleRenderingRun();
-    // return TranslateRendering::TranslateRenderingRun();
-    // return ScaleRendering::ScaleRenderingRun();
-    // return RotateRendering::RotateRenderingRun();
-    return InterpolationRendering::InterpolationRenderingRun();
+    // return TriangleRendering::TriangleRenderingRun(); // 绘制三角形
+    // return TranslateRendering::TranslateRenderingRun(); // 演示平移
+    // return ScaleRendering::ScaleRenderingRun(); // 演示缩放
+    // return RotateRendering::RotateRenderingRun(); // 演示旋转
+    // return InterpolationRendering::InterpolationRenderingRun(); // 演示渲染流水线自动处理的插值
+    // return IndiceRendering::IndiceRenderingRun(); // 演示顶点形状绘制索引
+    return Triangle3DRendering::Triangle3DRenderingRun(); // 演示 3D 三角形
 }

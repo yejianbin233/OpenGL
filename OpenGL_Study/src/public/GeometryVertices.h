@@ -25,6 +25,19 @@ namespace geometry_vertices_data {
             0.4f, -0.4f, 0.0f, // 屏幕右下角
             0.0f, 0.4f, 0.0f,
        };
+
+        float simple_3d[] = {
+            -1.0f, -1.0f, 0.0f,
+            0.0f, -1.0f, 1.0f,
+            1.0f, -1.0f, 0.0f,
+            0.0f, 1.0f, 0.0f
+        };
+        unsigned int indices_simple_3d[] = { 
+            0, 3, 1,
+            1, 3, 2,
+            2, 3, 0,
+            0, 1, 2 
+        };
     }
 
 

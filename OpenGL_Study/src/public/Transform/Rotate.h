@@ -62,7 +62,7 @@ namespace RotateRendering
         // -- 数据准备 --
 
         // -- 着色器（Shader） --
-        Shader ourShader("src/Shaders/VertexShaders/Translate.vs", "src/Shaders/FragmentShaders/Default.fs");
+        Shader ourShader("src/Shaders/VertexShaders/Transform.vs", "src/Shaders/FragmentShaders/Default.fs");
         ourShader.use();
         // -- 着色器（Shader）  --
 
