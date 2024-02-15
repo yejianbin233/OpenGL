@@ -49,7 +49,12 @@ namespace TriangleRendering
         unsigned int VAO; // 声明 VAO
         glGenVertexArrays(1, &VAO); // 构建 VAO
         glBindVertexArray(VAO); // 绑定 VAO
-        // 设置顶点属性指针
+        // 设置顶点属性指针 - 顶点数据索引 0，大小为 3，stride（步幅/偏移）为 3 个 float，与"顶点着色器"layout (location = 0) in vec3 aPos; 对应
+        /* 如果有多个数据就需要进行多次设置，如
+        *   layout (location = 0) in vec3 aPos;
+            layout (location = 1) in vec3 aColor;
+            layout (location = 2) in vec2 aTexCoord;
+         */
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
         glEnableVertexAttribArray(0);
         // -- 数据准备 --

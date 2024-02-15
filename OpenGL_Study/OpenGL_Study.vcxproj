@@ -170,6 +170,7 @@
     <None Include="src\Shaders\VertexShaders\Default.vs" />
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
+    <None Include="src\Shaders\VertexShaders\Translate.vs" />
     <None Include="src\Shaders\VertexShaders\TextureTest.vs" />
     <None Include="src\Shaders\VertexShaders\Transformations.vs" />
     <None Include="src\Shaders\VertexShaders\TriangleVertexShader.vs" />
@@ -606,7 +607,11 @@
     <ClInclude Include="include\shader_s.h" />
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="src\public\GeometryVertices.h" />
+    <ClInclude Include="src\public\Geometry\Triangle.h" />
     <ClInclude Include="src\public\Main.h" />
+    <ClInclude Include="src\public\Transform\Rotate.h" />
+    <ClInclude Include="src\public\Transform\Scale.h" />
+    <ClInclude Include="src\public\Transform\Translate.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="include\glm\CMakeLists.txt" />

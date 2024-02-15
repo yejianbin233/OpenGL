@@ -1,8 +1,9 @@
 ﻿#include "Main.h"
 
 #include "Geometry/Triangle.h"
-
-
+#include "Transform/Rotate.h"
+#include "Transform/Scale.h"
+#include "Transform/Translate.h"
 
 
 // 创建窗口示例代码
@@ -83,5 +84,8 @@ int OpenGL_WindowTemplate()
 
 int main()
 {
-    return TriangleRendering::TriangleRenderingRun();
+    // return TriangleRendering::TriangleRenderingRun();
+    // return TranslateRendering::TranslateRenderingRun();
+    // return ScaleRendering::ScaleRenderingRun();
+    return RotateRendering::RotateRenderingRun();
 }
