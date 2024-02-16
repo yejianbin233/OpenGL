@@ -168,6 +168,7 @@
     <None Include="src\Shaders\VertexShaders\2.2.basic_lighting.vs" />
     <None Include="src\Shaders\VertexShaders\2.2.light_cube.vs" />
     <None Include="src\Shaders\VertexShaders\3D.vs" />
+    <None Include="src\Shaders\VertexShaders\Camera.vs" />
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
@@ -610,6 +611,7 @@
     <ClInclude Include="include\KHR\khrplatform.h" />
     <ClInclude Include="include\shader_s.h" />
     <ClInclude Include="include\stb_image.h" />
+    <ClInclude Include="src\public\Camera\Camera.h" />
     <ClInclude Include="src\public\GeometryVertices.h" />
     <ClInclude Include="src\public\Geometry\Triangle3D.h" />
     <ClInclude Include="src\public\Geometry\Triangle.h" />

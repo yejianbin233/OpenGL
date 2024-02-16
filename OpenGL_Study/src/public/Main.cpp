@@ -1,5 +1,6 @@
 ﻿#include "Main.h"
 
+#include "Camera/Camera.h"
 #include "Geometry/Triangle.h"
 #include "Geometry/Triangle3D.h"
 #include "indice/Indice.h"
@@ -93,5 +94,6 @@ int main()
     // return RotateRendering::RotateRenderingRun(); // 演示旋转
     // return InterpolationRendering::InterpolationRenderingRun(); // 演示渲染流水线自动处理的插值
     // return IndiceRendering::IndiceRenderingRun(); // 演示顶点形状绘制索引
-    return Triangle3DRendering::Triangle3DRenderingRun(); // 演示 3D 三角形
+    // return Triangle3DRendering::Triangle3DRenderingRun(); // 演示 3D 三角形
+    return CameraRendering::CameraRenderingRun(); // 演示 摄像机操作
 }
