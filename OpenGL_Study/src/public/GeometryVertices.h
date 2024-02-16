@@ -40,6 +40,36 @@ namespace geometry_vertices_data {
         };
     }
 
+    namespace square
+    {
+        float simpleWithVertexColor[] = {
+            //     ---- 位置 ----       ---- 颜色 ----
+            0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,
+            0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,
+           -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,
+           -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,
+       };
 
+        float simpleWithTexCoord[] = {
+            //     ---- 位置 ----       ---- 纹理坐标 ----
+            0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // top right
+            0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // bottom right
+            -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, // bottom left
+            -0.5f,  0.5f, 0.0f,  0.0f, 1.0f  // top left
+       };
+
+        float simpleWithVertexColorTexCoord[] = {
+            // 位置          // 颜色           // 纹理坐标
+            0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
+            0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // bottom right
+           -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
+           -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // top left 
+       };
+
+        unsigned int indices[] = {  
+            0, 1, 3, // first triangle
+            1, 2, 3  // second triangle
+        };
+    }
     
 }

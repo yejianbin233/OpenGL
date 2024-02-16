@@ -5,6 +5,9 @@
 #include "Geometry/Triangle3D.h"
 #include "indice/Indice.h"
 #include "Interpolation/Interpolation.h"
+#include "Texture/MoreTexture.h"
+#include "Texture/Texture.h"
+#include "Texture/TextureBlendVertexColor.h"
 #include "Transform/Rotate.h"
 #include "Transform/Scale.h"
 #include "Transform/Translate.h"
@@ -95,5 +98,8 @@ int main()
     // return InterpolationRendering::InterpolationRenderingRun(); // 演示渲染流水线自动处理的插值
     // return IndiceRendering::IndiceRenderingRun(); // 演示顶点形状绘制索引
     // return Triangle3DRendering::Triangle3DRenderingRun(); // 演示 3D 三角形
-    return CameraRendering::CameraRenderingRun(); // 演示 摄像机操作
+    // return CameraRendering::CameraRenderingRun(); // 演示 摄像机操作
+    // return TextureRendering::TextureRenderingRun(); // 演示 纹理采样
+    // return TextureBlendVertexColorRendering::TextureBlendVertexColorRenderingRun(); // 演示 纹理采样 与顶点颜色混合
+    return MoreTextureRendering::MoreTextureRenderingRun(); // 演示 多个纹理采样混合
 }

@@ -158,6 +158,9 @@
     <None Include="src\Shaders\FragmentShaders\Indice.fs" />
     <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
     <None Include="src\Shaders\FragmentShaders\LightCube.fs" />
+    <None Include="src\Shaders\FragmentShaders\MoreTexture.fs" />
+    <None Include="src\Shaders\FragmentShaders\Texture.fs" />
+    <None Include="src\Shaders\FragmentShaders\TextureBlendVertexColor.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureTest.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureTest2.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureTest3.fs" />
@@ -175,6 +178,8 @@
     <None Include="src\Shaders\VertexShaders\Indice.vs" />
     <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
+    <None Include="src\Shaders\VertexShaders\Texture.vs" />
+    <None Include="src\Shaders\VertexShaders\TextureBlendVertexColor.vs" />
     <None Include="src\Shaders\VertexShaders\Transform.vs" />
     <None Include="src\Shaders\VertexShaders\TextureTest.vs" />
     <None Include="src\Shaders\VertexShaders\Transformations.vs" />
@@ -618,6 +623,9 @@
     <ClInclude Include="src\public\indice\Indice.h" />
     <ClInclude Include="src\public\Interpolation\Interpolation.h" />
     <ClInclude Include="src\public\Main.h" />
+    <ClInclude Include="src\public\Texture\MoreTexture.h" />
+    <ClInclude Include="src\public\Texture\Texture.h" />
+    <ClInclude Include="src\public\Texture\TextureBlendVertexColor.h" />
     <ClInclude Include="src\public\Transform\Rotate.h" />
     <ClInclude Include="src\public\Transform\Scale.h" />
     <ClInclude Include="src\public\Transform\Translate.h" />
