@@ -5,6 +5,10 @@
 #include "Geometry/Triangle3D.h"
 #include "indice/Indice.h"
 #include "Interpolation/Interpolation.h"
+#include "Lighting/StandardLighting.h"
+#include "Lighting/StandardLighting_Dynamic.h"
+#include "Lighting/StandardLighting_HalfLambert_BllinPhong.h"
+#include "Lighting/StandardLighting_HalfLambert_BllinPhong_Dynamic.h"
 #include "Texture/MoreTexture.h"
 #include "Texture/Texture.h"
 #include "Texture/TextureBlendVertexColor.h"
@@ -101,5 +105,9 @@ int main()
     // return CameraRendering::CameraRenderingRun(); // 演示 摄像机操作
     // return TextureRendering::TextureRenderingRun(); // 演示 纹理采样
     // return TextureBlendVertexColorRendering::TextureBlendVertexColorRenderingRun(); // 演示 纹理采样 与顶点颜色混合
-    return MoreTextureRendering::MoreTextureRenderingRun(); // 演示 多个纹理采样混合
+    // return MoreTextureRendering::MoreTextureRenderingRun(); // 演示 多个纹理采样混合
+    // return StandardLightingRendering::StandardLightingRenderingRun(); // 演示 标准灯光模型（环境光 + 漫反射（兰伯特光照模型） + 高光反射（Phong 光照模型））
+    // return StandardLightingDynamicRendering::StandardLightingDynamicRenderingRun(); // 光源位置动态改变，演示 标准灯光模型（环境光 + 漫反射（兰伯特光照模型） + 高光反射（Phong 光照模型））
+    // return StandardLightingHalfLambertBllinPhongRendering::StandardLightingHalfLambertBllinPhongRenderingRun(); // 演示 标准灯光模型（环境光 + 漫反射（半兰伯特光照模型） + 高光反射（Blinn-Phong 光照模型））
+    return StandardLightingHalfLambertBllinPhongDynamicRendering::StandardLightingHalfLambertBllinPhongDynamicRenderingRun(); // 光源位置动态改变，演示 标准灯光模型（环境光 + 漫反射（半兰伯特光照模型） + 高光反射（Blinn-Phong 光照模型））
 }

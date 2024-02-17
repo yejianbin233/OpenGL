@@ -40,6 +40,7 @@ namespace Triangle3DRendering
             std::cout << "Failed to initialize GLAD" << std::endl;
             return -1;
         }
+        glEnable(GL_DEPTH_TEST); // 开启深度测试
         // -- Glad  --
         // -- 数据准备 -- 数据初始化代码（只运行一次 (除非你的物体频繁改变)）
         unsigned int VBO; // 声明 VBO
@@ -84,7 +85,7 @@ namespace Triangle3DRendering
             // render - --渲染指令--
             // 清除上一帧渲染数据
             glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-            glClear(GL_COLOR_BUFFER_BIT);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // GL_DEPTH_BUFFER_BIT 开启深度测试应该处理的 Buffer
             
             glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
             transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
