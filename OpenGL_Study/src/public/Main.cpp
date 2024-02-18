@@ -12,6 +12,7 @@
 #include "Lighting/StandardLighting_HalfLambert_BllinPhong_LightingMap.h"
 #include "Lighting/LightingSource/StandardLighting_DirectionalLight.h"
 #include "Lighting/LightingSource/StandardLighting_PointLight.h"
+#include "Lighting/LightingSource/StandardLighting_SpotLight.h"
 #include "Texture/MoreTexture.h"
 #include "Texture/Texture.h"
 #include "Texture/TextureBlendVertexColor.h"
@@ -115,5 +116,6 @@ int main()
     // return StandardLightingHalfLambertBllinPhongDynamicRendering::StandardLightingHalfLambertBllinPhongDynamicRenderingRun(); // 光源位置动态改变，演示 标准灯光模型（环境光 + 漫反射（半兰伯特光照模型） + 高光反射（Blinn-Phong 光照模型））
     // return StandardLightingHalfLambertBllinPhongLightingMapRendering::StandardLightingHalfLambertBllinPhongLightingMapRenderingRun(); // 演示 标准灯光模型（环境光 + 漫反射（半兰伯特光照模型） + 高光反射（Blinn-Phong 光照模型）） 再应用光照贴图（漫反射贴图 + 高光反射贴图）
     // return StandardLightingDirectionalLightRendering::StandardLightingDirectionalLightRenderingRun(); // 演示定向光源
-    return StandardLightingPointLightRendering::StandardLightingPointLightRenderingRun(); // 演示点光源
+    // return StandardLightingPointLightRendering::StandardLightingPointLightRenderingRun(); // 演示点光源
+    return StandardLightingSpotLightRendering::StandardLightingSpotLightRenderingRun(); // 演示聚光源
 }

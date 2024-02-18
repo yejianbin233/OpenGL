@@ -127,11 +127,10 @@ namespace StandardLightingPointLightRendering
             glActiveTexture(GL_TEXTURE1);// 设置高光反射贴图索引为 1
             glBindTexture(GL_TEXTURE_2D, specularMap);
             
-            lightingShader.setVec3("light.position", lightPos);
             // 材质属性
             
             // 光源属性
-            lightingShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
+            lightingShader.setVec3("light.position", lightPos);
             lightingShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
             lightingShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
             lightingShader.setVec3("light.specular", 2.0f, 2.0f, 2.0f);
