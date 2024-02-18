@@ -79,11 +79,9 @@ namespace MoreTextureRendering
         unsigned int texture1;
         glGenTextures(1, &texture1);
         // 使用glActiveTexture激活纹理单元，传入我们需要使用的纹理单元 或直接设置
-        // glActiveTexture(GL_TEXTURE0); // 纹理索引 0
-        // glBindTexture(GL_TEXTURE_2D, texture1);
-
-        glActiveTexture(GL_TEXTURE1); // 纹理索引 1
+        glActiveTexture(GL_TEXTURE0); // 纹理索引 0
         glBindTexture(GL_TEXTURE_2D, texture1);
+        
         // 为当前绑定的纹理对象设置环绕、过滤方式
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -107,6 +105,10 @@ namespace MoreTextureRendering
         unsigned int texture2;
         glGenTextures(1, &texture2);
         glBindTexture(GL_TEXTURE_2D, texture2);
+        
+        glActiveTexture(GL_TEXTURE1); // 纹理索引 1
+        glBindTexture(GL_TEXTURE_2D, texture2);
+        
         // set the texture wrapping parameters
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -133,11 +135,7 @@ namespace MoreTextureRendering
 
         // -- 着色器（Shader） --
         Shader ourShader("src/Shaders/VertexShaders/Texture.vs", "src/Shaders/FragmentShaders/MoreTexture.fs");
-        ourShader.use();
-
-        // 多纹理设置
-        ourShader.setInt("texture1", 0);
-        ourShader.setInt("texture2", 1);
+        
         // -- 着色器（Shader）  --
         
         // render loop - 渲染循环
@@ -150,6 +148,10 @@ namespace MoreTextureRendering
 
             // bind textures on corresponding texture units
             // 使用glActiveTexture激活纹理单元，传入我们需要使用的纹理单元
+            // 多纹理设置
+            ourShader.use();
+            ourShader.setInt("texture1", 0);
+            ourShader.setInt("texture2", 1);
             glActiveTexture(GL_TEXTURE0); // 纹理索引 0
             glBindTexture(GL_TEXTURE_2D, texture1);
             glActiveTexture(GL_TEXTURE1); // 纹理索引 1
