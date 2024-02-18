@@ -159,6 +159,7 @@
     <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
     <None Include="src\Shaders\FragmentShaders\LightCube.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_DirectionalLight.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.fs" />
@@ -183,6 +184,7 @@
     <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_DirectionalLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.vs" />
     <None Include="src\Shaders\VertexShaders\Texture.vs" />
@@ -629,6 +631,7 @@
     <ClInclude Include="src\public\Geometry\Triangle.h" />
     <ClInclude Include="src\public\indice\Indice.h" />
     <ClInclude Include="src\public\Interpolation\Interpolation.h" />
+    <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_DirectionalLight.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_Dynamic.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong.h" />
