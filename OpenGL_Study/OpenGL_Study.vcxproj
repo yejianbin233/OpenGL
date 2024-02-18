@@ -160,8 +160,10 @@
     <None Include="src\Shaders\FragmentShaders\LightCube.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_DirectionalLight.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_MultiLighting.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_PointLight.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLight.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.fs" />
@@ -187,6 +189,7 @@
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_DirectionalLight.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_MultiLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_PointLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_SpotLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
@@ -636,8 +639,10 @@
     <ClInclude Include="src\public\indice\Indice.h" />
     <ClInclude Include="src\public\Interpolation\Interpolation.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_DirectionalLight.h" />
+    <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_MultiLighting.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_PointLight.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLight.h" />
+    <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_Dynamic.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong.h" />

@@ -104,9 +104,10 @@ namespace StandardLightingPointLightRendering
             // bind textures on corresponding texture units
             // 使用glActiveTexture激活纹理单元，传入我们需要使用的纹理单元
             // 多纹理设置
-            glActiveTexture(GL_TEXTURE0); // 纹理索引 0
-            glBindTexture(GL_TEXTURE_2D, diffuseMap);
-            glActiveTexture(GL_TEXTURE1); // 纹理索引 1
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, diffuseMap); // 设置漫反射贴图索引为 0
+            // bind specular map
+            glActiveTexture(GL_TEXTURE1);// 设置高光反射贴图索引为 1
             glBindTexture(GL_TEXTURE_2D, specularMap);
             
             // view/projection transformations
@@ -121,11 +122,7 @@ namespace StandardLightingPointLightRendering
 
             // 材质属性
             lightingShader.setFloat("material.shininess", 64.0f);
-            glActiveTexture(GL_TEXTURE0);
-            glBindTexture(GL_TEXTURE_2D, diffuseMap); // 设置漫反射贴图索引为 0
-            // bind specular map
-            glActiveTexture(GL_TEXTURE1);// 设置高光反射贴图索引为 1
-            glBindTexture(GL_TEXTURE_2D, specularMap);
+            
             
             // 材质属性
             
