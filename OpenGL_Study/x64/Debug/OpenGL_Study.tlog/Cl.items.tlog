@@ -1,0 +1,15 @@
+D:\OpenGL\OpenGL\OpenGL_Study\include\glm\detail\glm.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\glm.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\glad.c;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\glad.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\3D.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\3D.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\3D2.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\3D2.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\3D3.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\3D3.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\Basic_lighting_diffuse.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\Basic_lighting_diffuse.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\basic_lighting_specular.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\basic_lighting_specular.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\Colors.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\Colors.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\ShaderTest.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\ShaderTest.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\TextureTest.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\TextureTest.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\TextureTest2.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\TextureTest2.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\TextureTest3.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\TextureTest3.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\TextureTest4.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\TextureTest4.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\private\Transformations.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\Transformations.obj
+D:\OpenGL\OpenGL\OpenGL_Study\src\public\Main.cpp;D:\OpenGL\OpenGL\OpenGL_Study\x64\Debug\Main.obj

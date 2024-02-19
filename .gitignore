@@ -110,3 +110,4 @@ postBuffer = 524288000
 /Plugins/.gitignore
 /Plugins/InteractiveWorld/Source/InteractiveWorld/.idea/.idea.InteractiveWorld.dir/.idea/projectSettingsUpdater.xml
 /Plugins/InteractiveWorld/Source/InteractiveWorld/.idea/.idea.InteractiveWorld.dir/.idea/workspace.xml
+*/lib/*

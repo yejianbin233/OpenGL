@@ -82,7 +82,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>./lib;$(SolutionDir)lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc143-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,10 +108,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc143-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -167,6 +170,7 @@
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.fs" />
+    <None Include="src\Shaders\FragmentShaders\Model\Model.fs" />
     <None Include="src\Shaders\FragmentShaders\MoreTexture.fs" />
     <None Include="src\Shaders\FragmentShaders\Texture.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureBlendVertexColor.fs" />
@@ -194,6 +198,7 @@
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_SpotLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.vs" />
+    <None Include="src\Shaders\VertexShaders\Model\Model.vs" />
     <None Include="src\Shaders\VertexShaders\Texture.vs" />
     <None Include="src\Shaders\VertexShaders\TextureBlendVertexColor.vs" />
     <None Include="src\Shaders\VertexShaders\Transform.vs" />
@@ -630,6 +635,8 @@
     <ClInclude Include="include\glm\vec4.hpp" />
     <ClInclude Include="include\glm\vector_relational.hpp" />
     <ClInclude Include="include\KHR\khrplatform.h" />
+    <ClInclude Include="include\Mesh.h" />
+    <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\shader_s.h" />
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="src\public\Camera\Camera.h" />
@@ -649,6 +656,7 @@
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong_Dynamic.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong_LightingMap.h" />
     <ClInclude Include="src\public\Main.h" />
+    <ClInclude Include="src\public\Model\Model.h" />
     <ClInclude Include="src\public\Texture\MoreTexture.h" />
     <ClInclude Include="src\public\Texture\Texture.h" />
     <ClInclude Include="src\public\Texture\TextureBlendVertexColor.h" />
@@ -660,6 +668,27 @@
     <Content Include="include\glm\CMakeLists.txt" />
     <Content Include="src\Image\Resources\container2.png" />
     <Content Include="src\Image\Resources\container2_specular.png" />
+    <Content Include="src\Model\nanosuit\arm_dif.png" />
+    <Content Include="src\Model\nanosuit\arm_showroom_ddn.png" />
+    <Content Include="src\Model\nanosuit\arm_showroom_spec.png" />
+    <Content Include="src\Model\nanosuit\body_dif.png" />
+    <Content Include="src\Model\nanosuit\body_showroom_ddn.png" />
+    <Content Include="src\Model\nanosuit\body_showroom_spec.png" />
+    <Content Include="src\Model\nanosuit\glass_ddn.png" />
+    <Content Include="src\Model\nanosuit\glass_dif.png" />
+    <Content Include="src\Model\nanosuit\hand_dif.png" />
+    <Content Include="src\Model\nanosuit\hand_showroom_ddn.png" />
+    <Content Include="src\Model\nanosuit\hand_showroom_spec.png" />
+    <Content Include="src\Model\nanosuit\helmet_diff.png" />
+    <Content Include="src\Model\nanosuit\helmet_showroom_ddn.png" />
+    <Content Include="src\Model\nanosuit\helmet_showroom_spec.png" />
+    <Content Include="src\Model\nanosuit\leg_dif.png" />
+    <Content Include="src\Model\nanosuit\leg_showroom_ddn.png" />
+    <Content Include="src\Model\nanosuit\leg_showroom_spec.png" />
+    <Content Include="src\Model\nanosuit\LICENSE.txt" />
+    <Content Include="src\Model\nanosuit\nanosuit.blend" />
+    <Content Include="src\Model\nanosuit\nanosuit.mtl" />
+    <Content Include="src\Model\nanosuit\nanosuit.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,6 +15,7 @@
 #include "Lighting/LightingSource/StandardLighting_PointLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLightSoftEdge.h"
+#include "Model/Model.h"
 #include "Texture/MoreTexture.h"
 #include "Texture/Texture.h"
 #include "Texture/TextureBlendVertexColor.h"
@@ -121,5 +122,6 @@ int main()
     // return StandardLightingPointLightRendering::StandardLightingPointLightRenderingRun(); // 演示点光源
     // return StandardLightingSpotLightRendering::StandardLightingSpotLightRenderingRun(); // 演示聚光源
     // return StandardLightingSpotLightSoftEdgeRendering::StandardLightingSpotLightSoftEdgeRenderingRun(); // 演示聚光源并软化光源边缘
-    return StandardLightingMultiLightingRendering::StandardLightingMultiLightingRenderingRun(); // 多光源场景
+    // return StandardLightingMultiLightingRendering::StandardLightingMultiLightingRenderingRun(); // 多光源场景
+    return ModelRendering::ModelRenderingRun(); // 导入模型
 }
