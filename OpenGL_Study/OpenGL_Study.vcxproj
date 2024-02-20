@@ -161,6 +161,7 @@
     <None Include="src\Shaders\FragmentShaders\Default.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\DepthTest.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\VisualDepthBuffer.fs" />
+    <None Include="src\Shaders\FragmentShaders\FaceCulling\FaceCulling.fs" />
     <None Include="src\Shaders\FragmentShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\FragmentShaders\Indice.fs" />
     <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
@@ -195,6 +196,7 @@
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
     <None Include="src\Shaders\VertexShaders\DepthTest\DepthTest.vs" />
+    <None Include="src\Shaders\VertexShaders\FaceCulling\FaceCulling.vs" />
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\VertexShaders\Indice.vs" />
     <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
@@ -653,6 +655,7 @@
     <ClInclude Include="src\public\Camera\Camera.h" />
     <ClInclude Include="src\public\DepthTest\DepthTest.h" />
     <ClInclude Include="src\public\DepthTest\VisualDepthBuffer.h" />
+    <ClInclude Include="src\public\FaceCulling\FaceCulling.h" />
     <ClInclude Include="src\public\GeometryVertices.h" />
     <ClInclude Include="src\public\Geometry\Triangle3D.h" />
     <ClInclude Include="src\public\Geometry\Triangle.h" />
