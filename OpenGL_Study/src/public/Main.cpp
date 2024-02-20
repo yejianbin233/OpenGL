@@ -21,6 +21,12 @@
 #include "Lighting/LightingSource/StandardLighting_SpotLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLightSoftEdge.h"
 #include "Model/Model.h"
+#include "PostProcess/FrameBuffer.h"
+#include "PostProcess/FrameBuffer_PostProcess_AntiphaseColor.h"
+#include "PostProcess/FrameBuffer_PostProcess_Blur.h"
+#include "PostProcess/FrameBuffer_PostProcess_EdgeDetect.h"
+#include "PostProcess/FrameBuffer_PostProcess_Grayscale.h"
+#include "PostProcess/FrameBuffer_PostProcess_Sharpen.h"
 #include "StencilTest/StencilTest.h"
 #include "Texture/MoreTexture.h"
 #include "Texture/Texture.h"
@@ -135,5 +141,11 @@ int main()
     // return StencilTestRendering::StencilTestRenderingRun(); // 模板测试，绘制物体轮廓
     // return BlendingRendering::BlendingRenderingRun(); // 混合应用，丢弃贴图 Alpha 值小于特定值（<0.1）的片段
     // return BlendingTranslucentRendering::BlendingTranslucentRenderingRun(); // 混合应用，根据物体排序混合不透明物体
-    return FaceCullingRendering::FaceCullingRenderingRun(); // 面剔除
+    // return FaceCullingRendering::FaceCullingRenderingRun(); // 面剔除
+    // return FrameBufferRendering::FrameBufferRenderingRun(); // 帧缓冲，创建帧缓冲
+    // return FrameBufferPostProcessAntiphaseColorRendering::FrameBufferPostProcessAntiphaseColorRenderingRun(); // 帧缓冲，后期处理，颜色反相
+    // return FrameBufferPostProcessBlurRendering::FrameBufferPostProcessBlurRenderingRun(); // 帧缓冲，后期处理，模糊
+    // return FrameBufferPostProcessEdgeDetectRendering::FrameBufferPostProcessEdgeDetectRenderingRun(); // 帧缓冲，后期处理，边缘检测
+    // return FrameBufferPostProcessGrayscaleRendering::FrameBufferPostProcessGrayscaleRenderingRun(); // 帧缓冲，后期处理，灰度
+    return FrameBufferPostProcessSharpenRendering::FrameBufferPostProcessSharpenRenderingRun(); // 帧缓冲，后期处理，锐化
 }

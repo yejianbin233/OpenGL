@@ -177,6 +177,13 @@
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.fs" />
     <None Include="src\Shaders\FragmentShaders\Model\Model.fs" />
     <None Include="src\Shaders\FragmentShaders\MoreTexture.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer_PostProcess_Screen.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer_PostProcess_Screen_AntiphaseColor.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer_PostProcess_Screen_Blur.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer_PostProcess_Screen_EdgeDetect.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer_PostProcess_Screen_Grayscale.fs" />
+    <None Include="src\Shaders\FragmentShaders\PostProcess\FrameBuffer_PostProcess_Screen_Sharpen.fs" />
     <None Include="src\Shaders\FragmentShaders\StencilTest\StencilTest.fs" />
     <None Include="src\Shaders\FragmentShaders\StencilTest\StencilTestEdgeColor.fs" />
     <None Include="src\Shaders\FragmentShaders\Texture.fs" />
@@ -209,6 +216,8 @@
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.vs" />
     <None Include="src\Shaders\VertexShaders\Model\Model.vs" />
+    <None Include="src\Shaders\VertexShaders\PostProcess\FrameBuffer.vs" />
+    <None Include="src\Shaders\VertexShaders\PostProcess\FrameBuffer_PostProcess_Screen.vs" />
     <None Include="src\Shaders\VertexShaders\StencilTest\StencilTest.vs" />
     <None Include="src\Shaders\VertexShaders\Texture.vs" />
     <None Include="src\Shaders\VertexShaders\TextureBlendVertexColor.vs" />
@@ -673,6 +682,12 @@
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong_LightingMap.h" />
     <ClInclude Include="src\public\Main.h" />
     <ClInclude Include="src\public\Model\Model.h" />
+    <ClInclude Include="src\public\PostProcess\FrameBuffer.h" />
+    <ClInclude Include="src\public\PostProcess\FrameBuffer_PostProcess_AntiphaseColor.h" />
+    <ClInclude Include="src\public\PostProcess\FrameBuffer_PostProcess_Blur.h" />
+    <ClInclude Include="src\public\PostProcess\FrameBuffer_PostProcess_EdgeDetect.h" />
+    <ClInclude Include="src\public\PostProcess\FrameBuffer_PostProcess_Grayscale.h" />
+    <ClInclude Include="src\public\PostProcess\FrameBuffer_PostProcess_Sharpen.h" />
     <ClInclude Include="src\public\StencilTest\StencilTest.h" />
     <ClInclude Include="src\public\Texture\MoreTexture.h" />
     <ClInclude Include="src\public\Texture\Texture.h" />
