@@ -18,6 +18,7 @@
 #include "Lighting/LightingSource/StandardLighting_SpotLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLightSoftEdge.h"
 #include "Model/Model.h"
+#include "StencilTest/StencilTest.h"
 #include "Texture/MoreTexture.h"
 #include "Texture/Texture.h"
 #include "Texture/TextureBlendVertexColor.h"
@@ -127,5 +128,6 @@ int main()
     // return StandardLightingMultiLightingRendering::StandardLightingMultiLightingRenderingRun(); // 多光源场景
     // return ModelRendering::ModelRenderingRun(); // 导入模型
     // return DepthTestRendering::DepthTestRenderingRun(); // 开启深度测试，深度测试相关设置
-    return VisualDepthBufferRendering::VisualDepthBufferRenderingRun(); // 深度测试可视化
+    // return VisualDepthBufferRendering::VisualDepthBufferRenderingRun(); // 深度测试可视化
+    return StencilTestRendering::StencilTestRenderingRun(); // 模板测试，绘制物体轮廓
 }
