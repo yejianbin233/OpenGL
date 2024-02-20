@@ -155,6 +155,8 @@
     <None Include="src\Shaders\FragmentShaders\2.1LightCube.fs" />
     <None Include="src\Shaders\FragmentShaders\2.2.basic_lighting.fs" />
     <None Include="src\Shaders\FragmentShaders\2.2.light_cube.fs" />
+    <None Include="src\Shaders\FragmentShaders\Blending\Blending.fs" />
+    <None Include="src\Shaders\FragmentShaders\Blending\BlendingTranslucent.fs" />
     <None Include="src\Shaders\FragmentShaders\Colors.fs" />
     <None Include="src\Shaders\FragmentShaders\Default.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\DepthTest.fs" />
@@ -188,6 +190,7 @@
     <None Include="src\Shaders\VertexShaders\2.2.basic_lighting.vs" />
     <None Include="src\Shaders\VertexShaders\2.2.light_cube.vs" />
     <None Include="src\Shaders\VertexShaders\3D.vs" />
+    <None Include="src\Shaders\VertexShaders\Blending\Blending.vs" />
     <None Include="src\Shaders\VertexShaders\Camera.vs" />
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
@@ -645,6 +648,8 @@
     <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\shader_s.h" />
     <ClInclude Include="include\stb_image.h" />
+    <ClInclude Include="src\public\Blending\Blending.h" />
+    <ClInclude Include="src\public\Blending\BlendingTranslucent.h" />
     <ClInclude Include="src\public\Camera\Camera.h" />
     <ClInclude Include="src\public\DepthTest\DepthTest.h" />
     <ClInclude Include="src\public\DepthTest\VisualDepthBuffer.h" />
@@ -681,8 +686,10 @@
     <Content Include="lib\debug\assimp-vc143-mtd.pdb" />
     <Content Include="lib\debug\glfw3.lib" />
     <Content Include="lib\debug\glfw3.pdb" />
+    <Content Include="src\Image\Resources\blending_transparent_window.png" />
     <Content Include="src\Image\Resources\container2.png" />
     <Content Include="src\Image\Resources\container2_specular.png" />
+    <Content Include="src\Image\Resources\grass.png" />
     <Content Include="src\Image\Resources\marble.jpg" />
     <Content Include="src\Image\Resources\metal.png" />
     <Content Include="src\Model\nanosuit\arm_dif.png" />

@@ -1,5 +1,7 @@
 ﻿#include "Main.h"
 
+#include "Blending/Blending.h"
+#include "Blending/BlendingTranslucent.h"
 #include "Camera/Camera.h"
 #include "DepthTest/DepthTest.h"
 #include "DepthTest/VisualDepthBuffer.h"
@@ -129,5 +131,7 @@ int main()
     // return ModelRendering::ModelRenderingRun(); // 导入模型
     // return DepthTestRendering::DepthTestRenderingRun(); // 开启深度测试，深度测试相关设置
     // return VisualDepthBufferRendering::VisualDepthBufferRenderingRun(); // 深度测试可视化
-    return StencilTestRendering::StencilTestRenderingRun(); // 模板测试，绘制物体轮廓
+    // return StencilTestRendering::StencilTestRenderingRun(); // 模板测试，绘制物体轮廓
+    // return BlendingRendering::BlendingRenderingRun(); // 混合应用，丢弃贴图 Alpha 值小于特定值（<0.1）的片段
+    return BlendingTranslucentRendering::BlendingTranslucentRenderingRun(); // 混合应用，根据物体排序混合不透明物体
 }
