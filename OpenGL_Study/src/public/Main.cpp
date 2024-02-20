@@ -1,6 +1,8 @@
 ﻿#include "Main.h"
 
 #include "Camera/Camera.h"
+#include "DepthTest/DepthTest.h"
+#include "DepthTest/VisualDepthBuffer.h"
 #include "Geometry/Triangle.h"
 #include "Geometry/Triangle3D.h"
 #include "indice/Indice.h"
@@ -123,5 +125,7 @@ int main()
     // return StandardLightingSpotLightRendering::StandardLightingSpotLightRenderingRun(); // 演示聚光源
     // return StandardLightingSpotLightSoftEdgeRendering::StandardLightingSpotLightSoftEdgeRenderingRun(); // 演示聚光源并软化光源边缘
     // return StandardLightingMultiLightingRendering::StandardLightingMultiLightingRenderingRun(); // 多光源场景
-    return ModelRendering::ModelRenderingRun(); // 导入模型
+    // return ModelRendering::ModelRenderingRun(); // 导入模型
+    // return DepthTestRendering::DepthTestRenderingRun(); // 开启深度测试，深度测试相关设置
+    return VisualDepthBufferRendering::VisualDepthBufferRenderingRun(); // 深度测试可视化
 }

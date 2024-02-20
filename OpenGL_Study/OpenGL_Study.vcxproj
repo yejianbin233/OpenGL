@@ -157,6 +157,8 @@
     <None Include="src\Shaders\FragmentShaders\2.2.light_cube.fs" />
     <None Include="src\Shaders\FragmentShaders\Colors.fs" />
     <None Include="src\Shaders\FragmentShaders\Default.fs" />
+    <None Include="src\Shaders\FragmentShaders\DepthTest\DepthTest.fs" />
+    <None Include="src\Shaders\FragmentShaders\DepthTest\VisualDepthBuffer.fs" />
     <None Include="src\Shaders\FragmentShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\FragmentShaders\Indice.fs" />
     <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
@@ -187,6 +189,7 @@
     <None Include="src\Shaders\VertexShaders\Camera.vs" />
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
+    <None Include="src\Shaders\VertexShaders\DepthTest\DepthTest.vs" />
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\VertexShaders\Indice.vs" />
     <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
@@ -640,6 +643,8 @@
     <ClInclude Include="include\shader_s.h" />
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="src\public\Camera\Camera.h" />
+    <ClInclude Include="src\public\DepthTest\DepthTest.h" />
+    <ClInclude Include="src\public\DepthTest\VisualDepthBuffer.h" />
     <ClInclude Include="src\public\GeometryVertices.h" />
     <ClInclude Include="src\public\Geometry\Triangle3D.h" />
     <ClInclude Include="src\public\Geometry\Triangle.h" />
@@ -666,6 +671,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="include\glm\CMakeLists.txt" />
+    <Content Include="lib\debug\assimp-vc143-mtd.exp" />
+    <Content Include="lib\debug\assimp-vc143-mtd.ilk" />
+    <Content Include="lib\debug\assimp-vc143-mtd.lib" />
+    <Content Include="lib\debug\assimp-vc143-mtd.pdb" />
+    <Content Include="lib\debug\glfw3.lib" />
+    <Content Include="lib\debug\glfw3.pdb" />
     <Content Include="src\Image\Resources\container2.png" />
     <Content Include="src\Image\Resources\container2_specular.png" />
     <Content Include="src\Model\nanosuit\arm_dif.png" />
@@ -689,6 +700,38 @@
     <Content Include="src\Model\nanosuit\nanosuit.blend" />
     <Content Include="src\Model\nanosuit\nanosuit.mtl" />
     <Content Include="src\Model\nanosuit\nanosuit.obj" />
+    <Content Include="x64\Debug\3D.obj" />
+    <Content Include="x64\Debug\3D2.obj" />
+    <Content Include="x64\Debug\3D3.obj" />
+    <Content Include="x64\Debug\assimp-vc143-mtd.dll" />
+    <Content Include="x64\Debug\Basic_lighting_diffuse.obj" />
+    <Content Include="x64\Debug\basic_lighting_specular.obj" />
+    <Content Include="x64\Debug\Colors.obj" />
+    <Content Include="x64\Debug\glad.obj" />
+    <Content Include="x64\Debug\glm.obj" />
+    <Content Include="x64\Debug\Main.obj" />
+    <Content Include="x64\Debug\OpenGL_Study.exe" />
+    <Content Include="x64\Debug\OpenGL_Study.exe.recipe" />
+    <Content Include="x64\Debug\OpenGL_Study.ilk" />
+    <Content Include="x64\Debug\OpenGL_Study.log" />
+    <Content Include="x64\Debug\OpenGL_Study.pdb" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\CL.command.1.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\Cl.items.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\CL.read.1.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\CL.write.1.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\link.command.1.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\link.read.1.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\link.write.1.tlog" />
+    <Content Include="x64\Debug\OpenGL_Study.tlog\OpenGL_Study.lastbuildstate" />
+    <Content Include="x64\Debug\OpenGL_Study.vcxproj.FileListAbsolute.txt" />
+    <Content Include="x64\Debug\ShaderTest.obj" />
+    <Content Include="x64\Debug\TextureTest.obj" />
+    <Content Include="x64\Debug\TextureTest2.obj" />
+    <Content Include="x64\Debug\TextureTest3.obj" />
+    <Content Include="x64\Debug\TextureTest4.obj" />
+    <Content Include="x64\Debug\Transformations.obj" />
+    <Content Include="x64\Debug\vc143.idb" />
+    <Content Include="x64\Debug\vc143.pdb" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
