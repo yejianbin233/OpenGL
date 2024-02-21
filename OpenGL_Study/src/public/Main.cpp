@@ -3,6 +3,7 @@
 #include "Blending/Blending.h"
 #include "Blending/BlendingTranslucent.h"
 #include "Camera/Camera.h"
+#include "CubeMap\Cubemap_Skybox.h"
 #include "DepthTest/DepthTest.h"
 #include "DepthTest/VisualDepthBuffer.h"
 #include "FaceCulling/FaceCulling.h"
@@ -147,5 +148,6 @@ int main()
     // return FrameBufferPostProcessBlurRendering::FrameBufferPostProcessBlurRenderingRun(); // 帧缓冲，后期处理，模糊
     // return FrameBufferPostProcessEdgeDetectRendering::FrameBufferPostProcessEdgeDetectRenderingRun(); // 帧缓冲，后期处理，边缘检测
     // return FrameBufferPostProcessGrayscaleRendering::FrameBufferPostProcessGrayscaleRenderingRun(); // 帧缓冲，后期处理，灰度
-    return FrameBufferPostProcessSharpenRendering::FrameBufferPostProcessSharpenRenderingRun(); // 帧缓冲，后期处理，锐化
+    // return FrameBufferPostProcessSharpenRendering::FrameBufferPostProcessSharpenRenderingRun(); // 帧缓冲，后期处理，锐化
+    return CubeMapSkyboxRendering::CubeMapSkyboxRenderingRun(); // 使用立方体贴图（Cubemap），创建天空盒
 }

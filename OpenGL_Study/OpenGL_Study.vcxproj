@@ -158,6 +158,8 @@
     <None Include="src\Shaders\FragmentShaders\Blending\Blending.fs" />
     <None Include="src\Shaders\FragmentShaders\Blending\BlendingTranslucent.fs" />
     <None Include="src\Shaders\FragmentShaders\Colors.fs" />
+    <None Include="src\Shaders\FragmentShaders\CubeMap\CubeMapScene.fs" />
+    <None Include="src\Shaders\FragmentShaders\CubeMap\CubeMapSkybox.fs" />
     <None Include="src\Shaders\FragmentShaders\Default.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\DepthTest.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\VisualDepthBuffer.fs" />
@@ -201,6 +203,8 @@
     <None Include="src\Shaders\VertexShaders\Blending\Blending.vs" />
     <None Include="src\Shaders\VertexShaders\Camera.vs" />
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
+    <None Include="src\Shaders\VertexShaders\CubeMap\CubeMapScene.vs" />
+    <None Include="src\Shaders\VertexShaders\CubeMap\CubeMapSkybox.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
     <None Include="src\Shaders\VertexShaders\DepthTest\DepthTest.vs" />
     <None Include="src\Shaders\VertexShaders\FaceCulling\FaceCulling.vs" />
@@ -662,6 +666,7 @@
     <ClInclude Include="src\public\Blending\Blending.h" />
     <ClInclude Include="src\public\Blending\BlendingTranslucent.h" />
     <ClInclude Include="src\public\Camera\Camera.h" />
+    <ClInclude Include="src\public\CubeMap\Cubemap_Skybox.h" />
     <ClInclude Include="src\public\DepthTest\DepthTest.h" />
     <ClInclude Include="src\public\DepthTest\VisualDepthBuffer.h" />
     <ClInclude Include="src\public\FaceCulling\FaceCulling.h" />
@@ -710,6 +715,12 @@
     <Content Include="src\Image\Resources\grass.png" />
     <Content Include="src\Image\Resources\marble.jpg" />
     <Content Include="src\Image\Resources\metal.png" />
+    <Content Include="src\Image\Resources\skybox\back.jpg" />
+    <Content Include="src\Image\Resources\skybox\bottom.jpg" />
+    <Content Include="src\Image\Resources\skybox\front.jpg" />
+    <Content Include="src\Image\Resources\skybox\left.jpg" />
+    <Content Include="src\Image\Resources\skybox\right.jpg" />
+    <Content Include="src\Image\Resources\skybox\top.jpg" />
     <Content Include="src\Model\nanosuit\arm_dif.png" />
     <Content Include="src\Model\nanosuit\arm_showroom_ddn.png" />
     <Content Include="src\Model\nanosuit\arm_showroom_spec.png" />
