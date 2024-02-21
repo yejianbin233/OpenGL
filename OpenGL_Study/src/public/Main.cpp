@@ -3,6 +3,8 @@
 #include "Blending/Blending.h"
 #include "Blending/BlendingTranslucent.h"
 #include "Camera/Camera.h"
+#include "CubeMap/Cubemap_Skybox_EnviromentMapping_Reflection.h"
+#include "CubeMap/Cubemap_Skybox_EnviromentMapping_Reflection_Refract.h"
 #include "CubeMap\Cubemap_Skybox.h"
 #include "DepthTest/DepthTest.h"
 #include "DepthTest/VisualDepthBuffer.h"
@@ -149,5 +151,7 @@ int main()
     // return FrameBufferPostProcessEdgeDetectRendering::FrameBufferPostProcessEdgeDetectRenderingRun(); // 帧缓冲，后期处理，边缘检测
     // return FrameBufferPostProcessGrayscaleRendering::FrameBufferPostProcessGrayscaleRenderingRun(); // 帧缓冲，后期处理，灰度
     // return FrameBufferPostProcessSharpenRendering::FrameBufferPostProcessSharpenRenderingRun(); // 帧缓冲，后期处理，锐化
-    return CubeMapSkyboxRendering::CubeMapSkyboxRenderingRun(); // 使用立方体贴图（Cubemap），创建天空盒
+    // return CubeMapSkyboxRendering::CubeMapSkyboxRenderingRun(); // 使用立方体贴图（Cubemap），创建天空盒
+    // return CubeMapSkyboxEnvironmentMappingRendering::CubeMapSkyboxEnvironmentMappingRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射
+    return CubeMapSkyboxEnvironmentMappingRefractRendering::CubeMapSkyboxEnvironmentMappingRefractRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射，折射
 }

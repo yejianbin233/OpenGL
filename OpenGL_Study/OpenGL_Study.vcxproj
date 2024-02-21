@@ -160,6 +160,8 @@
     <None Include="src\Shaders\FragmentShaders\Colors.fs" />
     <None Include="src\Shaders\FragmentShaders\CubeMap\CubeMapScene.fs" />
     <None Include="src\Shaders\FragmentShaders\CubeMap\CubeMapSkybox.fs" />
+    <None Include="src\Shaders\FragmentShaders\CubeMap\Cubemap_Skybox_EnviromentMapping_Reflection.fs" />
+    <None Include="src\Shaders\FragmentShaders\CubeMap\Cubemap_Skybox_EnviromentMapping_Reflection_refract.fs" />
     <None Include="src\Shaders\FragmentShaders\Default.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\DepthTest.fs" />
     <None Include="src\Shaders\FragmentShaders\DepthTest\VisualDepthBuffer.fs" />
@@ -205,6 +207,7 @@
     <None Include="src\Shaders\VertexShaders\Colors.vs" />
     <None Include="src\Shaders\VertexShaders\CubeMap\CubeMapScene.vs" />
     <None Include="src\Shaders\VertexShaders\CubeMap\CubeMapSkybox.vs" />
+    <None Include="src\Shaders\VertexShaders\CubeMap\Cubemap_Skybox_EnviromentMapping_Reflection.vs" />
     <None Include="src\Shaders\VertexShaders\Default.vs" />
     <None Include="src\Shaders\VertexShaders\DepthTest\DepthTest.vs" />
     <None Include="src\Shaders\VertexShaders\FaceCulling\FaceCulling.vs" />
@@ -667,6 +670,8 @@
     <ClInclude Include="src\public\Blending\BlendingTranslucent.h" />
     <ClInclude Include="src\public\Camera\Camera.h" />
     <ClInclude Include="src\public\CubeMap\Cubemap_Skybox.h" />
+    <ClInclude Include="src\public\CubeMap\Cubemap_Skybox_EnviromentMapping_Reflection.h" />
+    <ClInclude Include="src\public\CubeMap\Cubemap_Skybox_EnviromentMapping_Reflection_Refract.h" />
     <ClInclude Include="src\public\DepthTest\DepthTest.h" />
     <ClInclude Include="src\public\DepthTest\VisualDepthBuffer.h" />
     <ClInclude Include="src\public\FaceCulling\FaceCulling.h" />
