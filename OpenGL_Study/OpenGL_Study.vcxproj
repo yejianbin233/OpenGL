@@ -167,6 +167,7 @@
     <None Include="src\Shaders\FragmentShaders\DepthTest\VisualDepthBuffer.fs" />
     <None Include="src\Shaders\FragmentShaders\FaceCulling\FaceCulling.fs" />
     <None Include="src\Shaders\FragmentShaders\FragmentColorShader.fs" />
+    <None Include="src\Shaders\FragmentShaders\GeometryShader\GeometryShader.fs" />
     <None Include="src\Shaders\FragmentShaders\Indice.fs" />
     <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
     <None Include="src\Shaders\FragmentShaders\LightCube.fs" />
@@ -197,6 +198,7 @@
     <None Include="src\Shaders\FragmentShaders\TextureTest3.fs" />
     <None Include="src\Shaders\FragmentShaders\TextureTest4.fs" />
     <None Include="src\Shaders\FragmentShaders\Transformations.fs" />
+    <None Include="src\Shaders\GeometryShaders\GeometryShader.gs" />
     <None Include="src\Shaders\VertexShaders\2.1BaseLighting.vs" />
     <None Include="src\Shaders\VertexShaders\2.1LightCube.vs" />
     <None Include="src\Shaders\VertexShaders\2.2.basic_lighting.vs" />
@@ -212,6 +214,7 @@
     <None Include="src\Shaders\VertexShaders\DepthTest\DepthTest.vs" />
     <None Include="src\Shaders\VertexShaders\FaceCulling\FaceCulling.vs" />
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
+    <None Include="src\Shaders\VertexShaders\GeometryShader\GeometryShader.vs" />
     <None Include="src\Shaders\VertexShaders\Indice.vs" />
     <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
@@ -678,6 +681,7 @@
     <ClInclude Include="src\public\GeometryVertices.h" />
     <ClInclude Include="src\public\Geometry\Triangle3D.h" />
     <ClInclude Include="src\public\Geometry\Triangle.h" />
+    <ClInclude Include="src\public\GeometryShader\GeometryShader.h" />
     <ClInclude Include="src\public\indice\Indice.h" />
     <ClInclude Include="src\public\Interpolation\Interpolation.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_DirectionalLight.h" />

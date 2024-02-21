@@ -11,6 +11,7 @@
 #include "FaceCulling/FaceCulling.h"
 #include "Geometry/Triangle.h"
 #include "Geometry/Triangle3D.h"
+#include "GeometryShader/GeometryShader.h"
 #include "indice/Indice.h"
 #include "Interpolation/Interpolation.h"
 #include "Lighting/StandardLighting.h"
@@ -153,5 +154,6 @@ int main()
     // return FrameBufferPostProcessSharpenRendering::FrameBufferPostProcessSharpenRenderingRun(); // 帧缓冲，后期处理，锐化
     // return CubeMapSkyboxRendering::CubeMapSkyboxRenderingRun(); // 使用立方体贴图（Cubemap），创建天空盒
     // return CubeMapSkyboxEnvironmentMappingRendering::CubeMapSkyboxEnvironmentMappingRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射
-    return CubeMapSkyboxEnvironmentMappingRefractRendering::CubeMapSkyboxEnvironmentMappingRefractRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射，折射
+    // return CubeMapSkyboxEnvironmentMappingRefractRendering::CubeMapSkyboxEnvironmentMappingRefractRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射，折射
+    return GeometryShaderRendering::GeometryShaderRenderingRun(); // 几何着色器（Geometry Shader）
 }
