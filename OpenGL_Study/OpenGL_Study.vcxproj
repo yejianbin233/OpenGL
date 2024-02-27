@@ -169,6 +169,9 @@
     <None Include="src\Shaders\FragmentShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\FragmentShaders\GeometryShader\GeometryShader.fs" />
     <None Include="src\Shaders\FragmentShaders\Indice.fs" />
+    <None Include="src\Shaders\FragmentShaders\Instancing\Instancing.fs" />
+    <None Include="src\Shaders\FragmentShaders\Instancing\InstancingRock.fs" />
+    <None Include="src\Shaders\FragmentShaders\Instancing\Planet.fs" />
     <None Include="src\Shaders\FragmentShaders\Interpolation.fs" />
     <None Include="src\Shaders\FragmentShaders\LightCube.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource.fs" />
@@ -216,6 +219,9 @@
     <None Include="src\Shaders\VertexShaders\FragmentColorShader.fs" />
     <None Include="src\Shaders\VertexShaders\GeometryShader\GeometryShader.vs" />
     <None Include="src\Shaders\VertexShaders\Indice.vs" />
+    <None Include="src\Shaders\VertexShaders\Instancing\Instancing.vs" />
+    <None Include="src\Shaders\VertexShaders\Instancing\InstancingRock.vs" />
+    <None Include="src\Shaders\VertexShaders\Instancing\Planet.vs" />
     <None Include="src\Shaders\VertexShaders\Interpolation.vs" />
     <None Include="src\Shaders\VertexShaders\LightCube.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource.vs" />
@@ -683,6 +689,8 @@
     <ClInclude Include="src\public\Geometry\Triangle.h" />
     <ClInclude Include="src\public\GeometryShader\GeometryShader.h" />
     <ClInclude Include="src\public\indice\Indice.h" />
+    <ClInclude Include="src\public\Instancing\Instancing.h" />
+    <ClInclude Include="src\public\Instancing\InstancingAsteroids.h" />
     <ClInclude Include="src\public\Interpolation\Interpolation.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_DirectionalLight.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_MultiLighting.h" />
@@ -751,6 +759,12 @@
     <Content Include="src\Model\nanosuit\nanosuit.blend" />
     <Content Include="src\Model\nanosuit\nanosuit.mtl" />
     <Content Include="src\Model\nanosuit\nanosuit.obj" />
+    <Content Include="src\Model\planet\planet.mtl" />
+    <Content Include="src\Model\planet\planet.obj" />
+    <Content Include="src\Model\planet\planet_Quom1200.png" />
+    <Content Include="src\Model\rock\Rock-Texture-Surface.jpg" />
+    <Content Include="src\Model\rock\rock.mtl" />
+    <Content Include="src\Model\rock\rock.obj" />
     <Content Include="x64\Debug\3D.obj" />
     <Content Include="x64\Debug\3D2.obj" />
     <Content Include="x64\Debug\3D3.obj" />

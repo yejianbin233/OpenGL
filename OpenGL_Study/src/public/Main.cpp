@@ -13,6 +13,8 @@
 #include "Geometry/Triangle3D.h"
 #include "GeometryShader/GeometryShader.h"
 #include "indice/Indice.h"
+#include "Instancing/Instancing.h"
+#include "Instancing/InstancingAsteroids.h"
 #include "Interpolation/Interpolation.h"
 #include "Lighting/StandardLighting.h"
 #include "Lighting/StandardLighting_Dynamic.h"
@@ -155,5 +157,7 @@ int main()
     // return CubeMapSkyboxRendering::CubeMapSkyboxRenderingRun(); // 使用立方体贴图（Cubemap），创建天空盒
     // return CubeMapSkyboxEnvironmentMappingRendering::CubeMapSkyboxEnvironmentMappingRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射
     // return CubeMapSkyboxEnvironmentMappingRefractRendering::CubeMapSkyboxEnvironmentMappingRefractRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射，折射
-    return GeometryShaderRendering::GeometryShaderRenderingRun(); // 几何着色器（Geometry Shader）
+    // return GeometryShaderRendering::GeometryShaderRenderingRun(); // 几何着色器（Geometry Shader）
+    // return InstancingRendering::InstancingRenderingRun(); // 实例化（Instancing）
+    return InstancingAsteroidsRendering::InstancingAsteroidsRenderingRun(); // 实例化（Instancing）小行星场景
 }
