@@ -2,6 +2,7 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+// #include <GLEW/glew.h>
 
 #define STB_IMAGE_IMPLEMENTATION
 
@@ -102,7 +103,20 @@ namespace GlobalFuns
         lastY = ypos;
 
         camera.ProcessMouseMovement(xoffset, yoffset);
-    }   
+    }
+
+    bool keys[1024];
+    // Is called whenever a key is pressed/released via GLFW
+    void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
+    {
+        if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+            glfwSetWindowShouldClose(window, GL_TRUE);
+
+        if(action == GLFW_PRESS)
+            keys[key] = true;
+        else if(action == GLFW_RELEASE)
+            keys[key] = false;	
+    }
 
     // glfw: whenever the mouse scroll wheel scrolls, this callback is called
     // ----------------------------------------------------------------------
