@@ -160,6 +160,6 @@ int main()
     // return CubeMapSkyboxEnvironmentMappingRefractRendering::CubeMapSkyboxEnvironmentMappingRefractRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射，折射
     // return GeometryShaderRendering::GeometryShaderRenderingRun(); // 几何着色器（Geometry Shader）
     // return InstancingRendering::InstancingRenderingRun(); // 实例化（Instancing）
-    // return InstancingAsteroidsRendering::InstancingAsteroidsRenderingRun(); // 实例化（Instancing）小行星场景
-    return AntiAliasingRendering::AntiAliasingRenderingRun(); // 抗锯齿
+    return InstancingAsteroidsRendering::InstancingAsteroidsRenderingRun(); // 实例化（Instancing）小行星场景
+    // return AntiAliasingRendering::AntiAliasingRenderingRun(); // 抗锯齿
 }

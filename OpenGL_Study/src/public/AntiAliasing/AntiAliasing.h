@@ -1,6 +1,5 @@
 #pragma once
 #include "./../../public/Main.h"
-// #include "GLEW/glew.h"
 
 namespace AntiAliasingRendering
 {

@@ -252,7 +252,6 @@
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\filesystem.h" />
     <ClInclude Include="include\glad\glad.h" />
-    <ClInclude Include="include\GLEW\glew.h" />
     <ClInclude Include="include\GLFW\glfw3.h" />
     <ClInclude Include="include\GLFW\glfw3native.h" />
     <ClInclude Include="include\glm\common.hpp" />
