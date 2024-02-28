@@ -17,6 +17,7 @@
 #include "Instancing/Instancing.h"
 #include "Instancing/InstancingAsteroids.h"
 #include "Interpolation/Interpolation.h"
+#include "Lighting/PhongAndBlinnPhong.h"
 #include "Lighting/StandardLighting.h"
 #include "Lighting/StandardLighting_Dynamic.h"
 #include "Lighting/StandardLighting_HalfLambert_BllinPhong.h"
@@ -160,6 +161,7 @@ int main()
     // return CubeMapSkyboxEnvironmentMappingRefractRendering::CubeMapSkyboxEnvironmentMappingRefractRenderingRun(); // 使用立方体贴图（Cubemap），环境映射 - 反射，折射
     // return GeometryShaderRendering::GeometryShaderRenderingRun(); // 几何着色器（Geometry Shader）
     // return InstancingRendering::InstancingRenderingRun(); // 实例化（Instancing）
-    return InstancingAsteroidsRendering::InstancingAsteroidsRenderingRun(); // 实例化（Instancing）小行星场景
+    // return InstancingAsteroidsRendering::InstancingAsteroidsRenderingRun(); // 实例化（Instancing）小行星场景
     // return AntiAliasingRendering::AntiAliasingRenderingRun(); // 抗锯齿
+    return PhongAndBlinnPhongRendering::PhongAndBlinnPhongRenderingRun(); // 高级光照：Phong 和 Blinn-Phong 的对比
 }

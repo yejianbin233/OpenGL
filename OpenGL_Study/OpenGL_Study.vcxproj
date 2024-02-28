@@ -181,6 +181,7 @@
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_PointLight.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLight.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\PhongAndBlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.fs" />
@@ -231,6 +232,7 @@
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_MultiLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_PointLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_SpotLight.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\PhongAndBlinnPhong.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.vs" />
     <None Include="src\Shaders\VertexShaders\Model\Model.vs" />
@@ -700,6 +702,7 @@
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_PointLight.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLight.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.h" />
+    <ClInclude Include="src\public\Lighting\PhongAndBlinnPhong.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_Dynamic.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong.h" />
@@ -741,6 +744,7 @@
     <Content Include="src\Image\Resources\skybox\left.jpg" />
     <Content Include="src\Image\Resources\skybox\right.jpg" />
     <Content Include="src\Image\Resources\skybox\top.jpg" />
+    <Content Include="src\Image\Resources\wood.png" />
     <Content Include="src\Model\nanosuit\arm_dif.png" />
     <Content Include="src\Model\nanosuit\arm_showroom_ddn.png" />
     <Content Include="src\Model\nanosuit\arm_showroom_spec.png" />
