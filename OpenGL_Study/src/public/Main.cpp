@@ -10,6 +10,8 @@
 #include "DepthTest/DepthTest.h"
 #include "DepthTest/VisualDepthBuffer.h"
 #include "FaceCulling/FaceCulling.h"
+#include "Gamma/GammaCorrection.h"
+#include "Gamma/GammaCorrectionFragmentShader.h"
 #include "Geometry/Triangle.h"
 #include "Geometry/Triangle3D.h"
 #include "GeometryShader/GeometryShader.h"
@@ -28,6 +30,9 @@
 #include "Lighting/LightingSource/StandardLighting_PointLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLightSoftEdge.h"
+#include "Lighting/Shadow/DepthTexture.h"
+#include "Lighting/Shadow/ShadowMapping.h"
+#include "Lighting/Shadow/ShadowMapping_Bias.h"
 #include "Model/Model.h"
 #include "PostProcess/FrameBuffer.h"
 #include "PostProcess/FrameBuffer_PostProcess_AntiphaseColor.h"
@@ -163,5 +168,11 @@ int main()
     // return InstancingRendering::InstancingRenderingRun(); // 实例化（Instancing）
     // return InstancingAsteroidsRendering::InstancingAsteroidsRenderingRun(); // 实例化（Instancing）小行星场景
     // return AntiAliasingRendering::AntiAliasingRenderingRun(); // 抗锯齿
-    return PhongAndBlinnPhongRendering::PhongAndBlinnPhongRenderingRun(); // 高级光照：Phong 和 Blinn-Phong 的对比
+    // return PhongAndBlinnPhongRendering::PhongAndBlinnPhongRenderingRun(); // 高级光照：Phong 和 Blinn-Phong 的对比
+    // return GammaCorrectionRendering::GammaCorrectionRenderingRun(); // Gamma 矫正，使用 OpenGL 内置命令
+    // return GammaCorrectionFragmentShaderRendering::GammaCorrectionFragmentShaderRenderingRun(); // Gamma 矫正，使用"FragmentShader（片元着色器）"
+
+    // return DepthTextureRendering::DepthTextureRenderingRun(); // 阴影 - 深度贴图
+    // return ShadowMappingRendering::ShadowMappingRenderingRun(); // 阴影 - 使用深度贴图渲染阴影
+    return ShadowMappingBiasRendering::ShadowMappingBiasRenderingRun(); // 阴影 - 使用深度贴图渲染阴影，改进阴影（使用"阴影偏移"解决阴影失真问题）
 }

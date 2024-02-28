@@ -168,6 +168,7 @@
     <None Include="src\Shaders\FragmentShaders\DepthTest\VisualDepthBuffer.fs" />
     <None Include="src\Shaders\FragmentShaders\FaceCulling\FaceCulling.fs" />
     <None Include="src\Shaders\FragmentShaders\FragmentColorShader.fs" />
+    <None Include="src\Shaders\FragmentShaders\GammaCorrection\GammaCorrection.fs" />
     <None Include="src\Shaders\FragmentShaders\GeometryShader\GeometryShader.fs" />
     <None Include="src\Shaders\FragmentShaders\Indice.fs" />
     <None Include="src\Shaders\FragmentShaders\Instancing\Instancing.fs" />
@@ -182,6 +183,10 @@
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLight.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\PhongAndBlinnPhong.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\DebugDepth.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\ShadowMapping.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\ShadowMappingDepth.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\ShadowMappingBias.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.fs" />
@@ -233,6 +238,9 @@
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_PointLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_SpotLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\PhongAndBlinnPhong.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\Shadow\DebugDepth.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\Shadow\ShadowMapping.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\Shadow\ShadowMappingDepth.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting_HalfLambert_BlinnPhong_LightingMap.vs" />
     <None Include="src\Shaders\VertexShaders\Model\Model.vs" />
@@ -689,6 +697,8 @@
     <ClInclude Include="src\public\DepthTest\DepthTest.h" />
     <ClInclude Include="src\public\DepthTest\VisualDepthBuffer.h" />
     <ClInclude Include="src\public\FaceCulling\FaceCulling.h" />
+    <ClInclude Include="src\public\Gamma\GammaCorrection.h" />
+    <ClInclude Include="src\public\Gamma\GammaCorrectionFragmentShader.h" />
     <ClInclude Include="src\public\GeometryVertices.h" />
     <ClInclude Include="src\public\Geometry\Triangle3D.h" />
     <ClInclude Include="src\public\Geometry\Triangle.h" />
@@ -703,6 +713,9 @@
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLight.h" />
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.h" />
     <ClInclude Include="src\public\Lighting\PhongAndBlinnPhong.h" />
+    <ClInclude Include="src\public\Lighting\Shadow\DepthTexture.h" />
+    <ClInclude Include="src\public\Lighting\Shadow\ShadowMapping.h" />
+    <ClInclude Include="src\public\Lighting\Shadow\ShadowMapping_Bias.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_Dynamic.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting_HalfLambert_BllinPhong.h" />
