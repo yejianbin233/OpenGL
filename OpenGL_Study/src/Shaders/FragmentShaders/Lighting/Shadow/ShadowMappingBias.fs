@@ -26,10 +26,10 @@ float ShadowCalculation(vec4 fragPosLightSpace)
     float currentDepth = projCoords.z;
     // check whether current frag pos is in shadow
     
-    // float bias = 0.005; // 阴影偏移量，一个0.005的偏移就能帮到很大的忙，但是有些表面坡度很大，仍然会产生阴影失真。
-    vec3 lightDir = normalize(lightPos - fs_in.FragPos);
-    vec3 normal = normalize(fs_in.Normal);
-    float bias = max(0.05 * (1.0 - dot(normal, lightDir)), 0.005); // 有一个更加可靠的办法能够根据表面朝向光线的角度更改偏移量：使用点乘
+    float bias = 0.005; // 阴影偏移量，一个0.005的偏移就能帮到很大的忙，但是有些表面坡度很大，仍然会产生阴影失真。
+    // vec3 lightDir = normalize(lightPos - fs_in.FragPos);
+    // vec3 normal = normalize(fs_in.Normal);
+    // float bias = max(0.05 * (1.0 - dot(normal, lightDir)), 0.005); // 有一个更加可靠的办法能够根据表面朝向光线的角度更改偏移量：使用点乘
     float shadow = currentDepth - bias > closestDepth  ? 1.0 : 0.0;
 
     return shadow;

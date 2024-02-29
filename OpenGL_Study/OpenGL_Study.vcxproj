@@ -184,6 +184,8 @@
     <None Include="src\Shaders\FragmentShaders\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\PhongAndBlinnPhong.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\DebugDepth.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\PointShadow.fs" />
+    <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\PointShadowDepth.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\ShadowMapping.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\ShadowMappingDepth.fs" />
     <None Include="src\Shaders\FragmentShaders\Lighting\Shadow\ShadowMappingBias.fs" />
@@ -209,6 +211,7 @@
     <None Include="src\Shaders\FragmentShaders\TextureTest4.fs" />
     <None Include="src\Shaders\FragmentShaders\Transformations.fs" />
     <None Include="src\Shaders\GeometryShaders\GeometryShader.gs" />
+    <None Include="src\Shaders\GeometryShaders\PointShadowDepth.gs" />
     <None Include="src\Shaders\VertexShaders\2.1BaseLighting.vs" />
     <None Include="src\Shaders\VertexShaders\2.1LightCube.vs" />
     <None Include="src\Shaders\VertexShaders\2.2.basic_lighting.vs" />
@@ -239,6 +242,8 @@
     <None Include="src\Shaders\VertexShaders\Lighting\LightingSource\StandardLighting_SpotLight.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\PhongAndBlinnPhong.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\Shadow\DebugDepth.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\Shadow\PointShadow.vs" />
+    <None Include="src\Shaders\VertexShaders\Lighting\Shadow\PointShadowDepth.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\Shadow\ShadowMapping.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\Shadow\ShadowMappingDepth.vs" />
     <None Include="src\Shaders\VertexShaders\Lighting\StandardLighting.vs" />
@@ -714,6 +719,7 @@
     <ClInclude Include="src\public\Lighting\LightingSource\StandardLighting_SpotLightSoftEdge.h" />
     <ClInclude Include="src\public\Lighting\PhongAndBlinnPhong.h" />
     <ClInclude Include="src\public\Lighting\Shadow\DepthTexture.h" />
+    <ClInclude Include="src\public\Lighting\Shadow\PointLightingSourceShadowMapping.h" />
     <ClInclude Include="src\public\Lighting\Shadow\ShadowMapping.h" />
     <ClInclude Include="src\public\Lighting\Shadow\ShadowMapping_Bias.h" />
     <ClInclude Include="src\public\Lighting\StandardLighting.h" />

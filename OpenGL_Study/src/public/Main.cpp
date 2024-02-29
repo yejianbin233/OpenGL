@@ -31,6 +31,7 @@
 #include "Lighting/LightingSource/StandardLighting_SpotLight.h"
 #include "Lighting/LightingSource/StandardLighting_SpotLightSoftEdge.h"
 #include "Lighting/Shadow/DepthTexture.h"
+#include "Lighting/Shadow/PointLightingSourceShadowMapping.h"
 #include "Lighting/Shadow/ShadowMapping.h"
 #include "Lighting/Shadow/ShadowMapping_Bias.h"
 #include "Model/Model.h"
@@ -76,7 +77,7 @@ int OpenGL_WindowTemplate()
     glfwSetFramebufferSizeCallback(window, GlobalFuns::framebuffer_size_callback); // 窗口尺寸变化回调函数
     // -- Window Setting --
 
-    
+
     // -- Glad  --glad: load all OpenGL function pointers
     // GLAD 是用来管理 OpenGL 的函数指针的，所以在调用任何OpenGL的函数之前我们需要初始化GLAD。
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -174,5 +175,7 @@ int main()
 
     // return DepthTextureRendering::DepthTextureRenderingRun(); // 阴影 - 深度贴图
     // return ShadowMappingRendering::ShadowMappingRenderingRun(); // 阴影 - 使用深度贴图渲染阴影
-    return ShadowMappingBiasRendering::ShadowMappingBiasRenderingRun(); // 阴影 - 使用深度贴图渲染阴影，改进阴影（使用"阴影偏移"解决阴影失真问题）
+    // return ShadowMappingBiasRendering::ShadowMappingBiasRenderingRun(); // 阴影 - 使用深度贴图渲染阴影，改进阴影（使用"阴影偏移"解决阴影失真问题）
+
+    return PointShadowMappingRendering::PointShadowMappingRenderingRun(); // 点光源阴影
 }
